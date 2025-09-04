@@ -4,7 +4,16 @@ cleaner.py
 Module to clean and standardize supporter data before export.
 """
 
+print("[INFO] --- Installing 'CLEANER' libraries...")
+
 from datetime import datetime
+
+
+
+
+# -----------------------------
+# Configuration
+# -----------------------------
 
 # -----------------------------
 # Cleaning functions
@@ -33,6 +42,7 @@ def clean_date(date_str: str) -> str:
 
 def clean_data(data_list: list) -> list:
     """Apply cleaning to entire dataset."""
+
     cleaned = []
     for entry in data_list:
         cleaned.append({
