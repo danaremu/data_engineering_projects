@@ -1,15 +1,5 @@
 # TeamWater Scraper
 
-## Logging Levels
-
-Use these levels consistently across all modules for clarity. Logging levels indicate the severity of messages:
-
-- **[DEBUG]** → Diagnostic messages, usually turned off in production.
-- **[INFO]** → Regular program flow messages, e.g., "Page loaded successfully".
-- **[WARN]** → Something unusual but non-fatal, e.g., "Next button is disabled".
-- **[ERROR]** → Caught exceptions or failed operations.
-- **[CRITICAL]** → Unrecoverable failures, e.g., browser failed to start.
-
 ---
 
 ## All Functions Defined
@@ -39,4 +29,4 @@ All functions are defined in their respective modules:
   Sets up and returns a configured Selenium Chrome driver.
 - `innerHTMLChanged(locator, oldHTML="") -> callable`  
   Custom Expected Condition: waits until the innerHTML of an element changes.
-- `findNextButton(locator, searchT
+- `findNextButton(locator, search)
